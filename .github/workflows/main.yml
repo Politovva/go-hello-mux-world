@@ -1,4 +1,4 @@
-name: Create B/${{ env.IMAGE_NAME }}age
+name: Create B/${{ env.Hello_world_application }}age
 
 on:
   push:
