@@ -54,5 +54,5 @@ jobs:
             cd calendar-front.app
             docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password ${{ secrets.DOCKERHUB_TOKEN }} ${{ env.REGISTRY }}
             docker ps -q --filter "name=${{ env.IMAGE_NAME }}" | grep -q . && docker stop ${{ env.IMAGE_NAME }}
-            docker run -d --rm -p 8090:8090 ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }} --name ${{ env.IMAGE_NAME }}
+            docker run -d --rm -p 8090:8090 ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }} --name=${{ env.IMAGE_NAME }}
             
