@@ -1,4 +1,4 @@
-name: Create B/${{ env.Hello_world_application }}age
+name: Create Hello world application
 
 on:
   push:
