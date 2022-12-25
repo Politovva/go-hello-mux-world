@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"time"
 
-	"Hello Guys!"
+	"github.com/gorilla/mux"
 )
 
 // RootHandler is mapping "/"
 func RootHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello world ")
+	fmt.Fprintf(w, "Hello world)")
 }
 
 // GetSampleHandler is mapping "/sample"
